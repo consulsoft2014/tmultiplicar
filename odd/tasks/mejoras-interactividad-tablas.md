@@ -22,7 +22,15 @@ Revisión del único archivo (`tesoro_tablas.html`) encontró que la respuesta c
 - [x] **T3 — Fix: feedback claro cuando se alcanza el límite de tablas (20)** en vez de solo cambiar el texto del botón sin explicación.
 - [x] **T4 — Feature: racha/combo visual** ("¡Llevas N seguidas! 🔥") para motivar sin depender de un timer.
 - [x] **T5 — Feature: atajos de teclado (1/2/3)** para responder las preguntas de opción múltiple.
-- [ ] **T6 — Feature: celebración visual (confetti/pulso) al acertar**, usando CSS ya existente como base.
+- [x] **T6 — Feature: celebración visual (confetti/pulso) al acertar**, usando CSS ya existente como base.
+
+## Progreso y evidencia — verificación manual
+Probado en navegador (Claude in Chrome) servido con un server HTTP local de node:
+- Opciones de respuesta ya no siempre tienen la correcta como la menor (confirmado en varias preguntas: 8 en el medio con 12/4 alrededor, 4 al final con 6/2 alrededor).
+- Racha sube con aciertos consecutivos y vuelve a 0 con un error; aciertos y progreso avanzan correctamente.
+- Atajo de teclado (tecla "2" para la opción del medio) selecciona y responde correctamente.
+- `window.__islaTest.testLevels()` devuelve `valid:true` en los 6 niveles + test final.
+- Sin errores en consola del navegador durante todo el flujo probado.
 
 ## Criterios de aceptación
 - Las opciones incorrectas se generan con offsets mixtos (positivos y negativos), sin valores duplicados ni negativos, y sin patrón posicional/valor predecible.

@@ -1,0 +1,13 @@
+{
+  "name": "La Isla del Tesoro Matemático",
+  "short_name": "Tesoro Tablas",
+  "start_url": "./tesoro_tablas.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#59c4ef",
+  "theme_color": "#5b21b6",
+  "lang": "es",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

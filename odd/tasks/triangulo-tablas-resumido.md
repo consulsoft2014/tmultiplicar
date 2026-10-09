@@ -20,7 +20,7 @@ El usuario pidió otra página "resumida" para aprender las tablas sin repetir l
 
 ## Tareas
 - [x] **T1 — Construir `tabla_resumida.html`**: grilla triangular de 55 celdas (a≤b, 1 a 10), cada celda es flashcard (tap para revelar/ocultar el resultado), celdas de la diagonal (cuadrados perfectos) destacadas, sonido y celebración visual al descubrir una celda nueva, contador de progreso persistido, botón de reinicio.
-- [ ] **T2 — Enlaces cruzados** entre las páginas existentes (`tesoro_tablas.html`, `index.html`) y la nueva, para navegar entre ambas.
+- [x] **T2 — Enlaces cruzados** entre las páginas existentes (`tesoro_tablas.html`, `index.html`) y la nueva, para navegar entre ambas.
 - [ ] **T3 — Sumar la página nueva al precache del service worker** (bump de versión de cache para que los usuarios que ya instalaron la PWA reciban la actualización).
 - [ ] **T4 — Verificación manual en navegador**: cargar la página, descubrir celdas, confirmar que el progreso persiste tras recargar, y que sigue funcionando sin conexión.
 

@@ -1,4 +1,4 @@
-const CACHE = 'isla-tesoro-v2';
+const CACHE = 'isla-tesoro-v3';
 const ASSETS = ['./', './index.html', './tesoro_tablas.html', './tabla_resumida.html', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', e => {

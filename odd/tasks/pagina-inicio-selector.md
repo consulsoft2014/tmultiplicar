@@ -14,7 +14,7 @@ Ahora hay dos páginas de aprendizaje (`tesoro_tablas.html` y `tabla_resumida.ht
 
 ## Tareas
 - [x] **T1 — Reescribir `index.html`** como pantalla de selección con dos tarjetas (Isla del Tesoro / Triángulo del Tesoro), responsive, con mismo tema visual.
-- [ ] **T2 — Repuntar navegación** en ambas páginas de juego hacia `index.html`.
+- [x] **T2 — Repuntar navegación** en ambas páginas de juego hacia `index.html`.
 - [ ] **T3 — Bump de versión del service worker** y verificación manual (carga, tarjetas llevan a cada juego, funciona offline).
 
 ## Progreso y evidencia

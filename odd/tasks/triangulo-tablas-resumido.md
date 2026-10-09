@@ -22,7 +22,17 @@ El usuario pidió otra página "resumida" para aprender las tablas sin repetir l
 - [x] **T1 — Construir `tabla_resumida.html`**: grilla triangular de 55 celdas (a≤b, 1 a 10), cada celda es flashcard (tap para revelar/ocultar el resultado), celdas de la diagonal (cuadrados perfectos) destacadas, sonido y celebración visual al descubrir una celda nueva, contador de progreso persistido, botón de reinicio.
 - [x] **T2 — Enlaces cruzados** entre las páginas existentes (`tesoro_tablas.html`, `index.html`) y la nueva, para navegar entre ambas.
 - [x] **T3 — Sumar la página nueva al precache del service worker** (bump de versión de cache para que los usuarios que ya instalaron la PWA reciban la actualización).
-- [ ] **T4 — Verificación manual en navegador**: cargar la página, descubrir celdas, confirmar que el progreso persiste tras recargar, y que sigue funcionando sin conexión.
+- [x] **T4 — Verificación manual en navegador**: cargar la página, descubrir celdas, confirmar que el progreso persiste tras recargar, y que sigue funcionando sin conexión.
+
+## Progreso y evidencia — verificación manual
+Probado en navegador (Claude in Chrome) servido con un server HTTP local de node:
+- Triángulo renderiza las 55 celdas correctas (1≤a≤b≤10), diagonal (cuadrados perfectos) destacada en dorado.
+- Tocar una celda revela el resultado (ej. 3×6 → "=18", verificado también con 6×6 → "=36"); tocar de nuevo la tapa.
+- `localStorage` persiste el progreso: tras recargar, "2/55" y "1/10" se mantienen y las celdas descubiertas muestran el check dorado, pero vuelven a mostrar la operación (no la respuesta) para favorecer el repaso activo.
+- Con el service worker v2 activo (confirmado via `caches.keys()`/`cache.keys()`: las 6 rutas, incluida `tabla_resumida.html`, están precacheadas), apagando el servidor local la página sigue cargando y es jugable, y el link "Volver al juego principal" navega offline correctamente al juego principal (que también carga desde cache).
+
+## Estado final
+Las 4 tareas completadas y commiteadas en `feature/triangulo-tablas-resumido` (commits `9ca7ede`, `8258282`, `e1870ec`).
 
 ## Criterios de aceptación
 - Exactamente 55 celdas visibles (combinaciones únicas 1≤a≤b≤10), sin ninguna combinación repetida por conmutatividad.

@@ -32,6 +32,10 @@ Probado en navegador (Claude in Chrome) servido con un server HTTP local de node
 - `window.__islaTest.testLevels()` devuelve `valid:true` en los 6 niveles + test final.
 - Sin errores en consola del navegador durante todo el flujo probado.
 
+## Estado final
+Las 6 tareas completadas y commiteadas en `feature/mejoras-interactividad-tablas` (commits `7987cec`, `2d90bf2`, `e85d203`, `280c607`, `6ae3ad0`, `a81cd78`).
+`gentle-ai review assess` sobre todo el rango desde el punto de rama (`91b8b1c`): riesgo `medium` (cambio en archivo ejecutable), `review_due: false` (`under_budget`, 71 líneas cambiadas). No corresponde revisión nativa todavía; push/PR/merge quedan como decisión del usuario.
+
 ## Criterios de aceptación
 - Las opciones incorrectas se generan con offsets mixtos (positivos y negativos), sin valores duplicados ni negativos, y sin patrón posicional/valor predecible.
 - En niveles con `max=8`, los 8 multiplicadores aparecen de forma pareja en las 12 preguntas (no hay un grupo que se repita el doble que otro).

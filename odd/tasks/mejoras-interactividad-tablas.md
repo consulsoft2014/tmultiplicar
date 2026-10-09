@@ -18,8 +18,8 @@ Revisión del único archivo (`tesoro_tablas.html`) encontró que la respuesta c
 ## Tareas
 
 - [x] **T1 — Fix: opciones incorrectas deben poder ser menores a la correcta** (bug pedagógico principal: la correcta siempre era la mínima de las 3). Commit `7987cec`.
-- [ ] **T2 — Fix: distribución pareja de multiplicadores** en rondas de práctica cuando `max=8` (actualmente 1-4 se repiten y 5-8 aparecen una sola vez).
-- [ ] **T3 — Fix: feedback claro cuando se alcanza el límite de tablas (20)** en vez de solo cambiar el texto del botón sin explicación.
+- [x] **T2 — Fix: distribución pareja de multiplicadores** en rondas de práctica cuando `max=8` (actualmente 1-4 se repiten y 5-8 aparecen una sola vez). Commit `2d90bf2`.
+- [x] **T3 — Fix: feedback claro cuando se alcanza el límite de tablas (20)** en vez de solo cambiar el texto del botón sin explicación.
 - [ ] **T4 — Feature: racha/combo visual** ("¡Llevas N seguidas! 🔥") para motivar sin depender de un timer.
 - [ ] **T5 — Feature: atajos de teclado (1/2/3)** para responder las preguntas de opción múltiple.
 - [ ] **T6 — Feature: celebración visual (confetti/pulso) al acertar**, usando CSS ya existente como base.

@@ -1,14 +1,41 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=tesoro_tablas.html">
-<title>La Isla del Tesoro Matemático</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Isla del Tesoro Matemático — Elegí tu aventura</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js').catch(()=>{})}</script>
+<meta name="theme-color" content="#5b21b6">
+<style>
+:root{--ink:#172554;--violet:#5b21b6;--gold:#ffd43b}*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:"Trebuchet MS",Arial,sans-serif;color:var(--ink);background:linear-gradient(#59c4ef 0 35%,#c9f1ff 35% 50%,#f5d48d 50%)}a{text-decoration:none;color:inherit}.app{max-width:960px;margin:0 auto;padding:16px}.panel{background:#fffdf9;border:4px solid white;border-radius:28px;box-shadow:0 10px 24px #0c314635}.header{text-align:center;padding:26px 20px 22px}.header h1{color:var(--violet);font-size:clamp(1.5rem,5vw,2.6rem);margin:0;text-shadow:2px 2px var(--gold)}.header p{margin:10px 0 0;font-size:clamp(1rem,2.6vw,1.2rem)}.cards{display:flex;gap:18px;flex-wrap:wrap;padding:6px 20px 26px;justify-content:center}.card{flex:1;min-width:270px;max-width:420px;border-radius:26px;padding:24px 20px;color:white;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;border:5px solid white;box-shadow:0 10px 0 var(--shadow,#0003);transition:transform .15s,box-shadow .15s}.card:hover{transform:translateY(-4px) scale(1.02)}.card:active{transform:translateY(2px) scale(.98);box-shadow:0 4px 0 var(--shadow,#0003)}.card-isla{background:linear-gradient(160deg,#38bdf8,#0369a1);--shadow:#075985}.card-triangulo{background:linear-gradient(160deg,#a855f7,#6d28d9);--shadow:#4c1d95}.card-icon{font-size:4rem;animation:bob 1.6s infinite alternate}.card-badge{background:#ffffff33;border-radius:20px;padding:4px 14px;font-weight:900;font-size:.8rem;letter-spacing:.03em}.card h2{margin:4px 0 0;font-size:1.35rem}.card p{margin:0;opacity:.95;line-height:1.4;font-size:.95rem}.card-cta{margin-top:10px;background:white;color:var(--ink);font-weight:900;border-radius:14px;padding:10px 20px}.footnote{display:block;text-align:center;color:#456;padding:0 20px 20px;font-size:.9rem}@keyframes bob{to{transform:translateY(-7px)}}@media(max-width:580px){.app{padding:9px}.header{padding:18px 12px}.cards{padding:4px 12px 18px}}@media(prefers-reduced-motion:reduce){.card-icon{animation:none}}
+</style>
 </head>
 <body>
-<p>Redirigiendo a <a href="tesoro_tablas.html">La Isla del Tesoro Matemático</a>...</p>
+<div class="app">
+<div class="panel">
+<header class="header">
+<h1>🗺️ ¿A qué querés jugar hoy?</h1>
+<p>Elegí tu aventura y seguí aprendiendo las tablas de multiplicar 👇</p>
+</header>
+<div class="cards">
+<a class="card card-isla" href="tesoro_tablas.html">
+<span class="card-icon">🏝️</span>
+<span class="card-badge">🎮 MODO JUEGO</span>
+<h2>La Isla del Tesoro Matemático</h2>
+<p>Resolvé retos, armá rachas de aciertos y conseguí las reliquias doradas para llegar al tesoro final.</p>
+<span class="card-cta">¡A jugar! →</span>
+</a>
+<a class="card card-triangulo" href="tabla_resumida.html">
+<span class="card-icon">🔺💎</span>
+<span class="card-badge">🧠 MODO DESCUBRIR</span>
+<h2>El Triángulo del Tesoro</h2>
+<p>Tocá cada casillero y descubrí las 55 combinaciones únicas, a tu propio ritmo, sin repetir las que ya sabés.</p>
+<span class="card-cta">¡A explorar! →</span>
+</a>
+</div>
+<small class="footnote">Podés jugar sin internet una vez que entraste la primera vez. ¡Buena suerte, explorador!</small>
+</div>
+</div>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('service-worker.js').catch(()=>{}))}</script>
 </body>
 </html>

@@ -1,5 +1,5 @@
-const CACHE = 'isla-tesoro-v1';
-const ASSETS = ['./', './index.html', './tesoro_tablas.html', './manifest.json', './icon.svg'];
+const CACHE = 'isla-tesoro-v3';
+const ASSETS = ['./', './index.html', './tesoro_tablas.html', './tabla_resumida.html', './manifest.json', './icon.svg'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
